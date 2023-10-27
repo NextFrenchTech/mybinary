@@ -1,0 +1,68 @@
+@import url('//cdn.rawgit.com/arcticicestudio/nord/develop/src/nord.css');
+@import url('//cdn.jsdelivr.net/gh/be5invis/Iosevka@ff81c66/fonts.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font: 1em 'Iosevka Web', monospace;
+    background: var(--nord0);
+}
+
+#clock {
+    font-size: 40vh;
+    /*font-size: 20vh;*/
+    color: var(--nord14);
+}
+
+#timestamp {
+    font-size: 20vh;
+    /*font-size: 10vh;*/
+    color: var(--nord9);
+}
+
+.braille {
+    position: relative;
+}
+
+.braille::before {
+    position: absolute;
+    content: attr(data-before);
+    color: var(--nord1);
+}
+
+.braille::after {
+    position: relative;
+    content: attr(data-after);
+}
+
+#text {
+    font-weight: bold;
+    font-family: source code pro;
+    color: #B48EAD;
+}
+
+time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	font: bold sans-serif;
+}
+
+@media (max-width: 768px) {
+    #clock {
+        font-size: 20vh;
+    }
+    #timestamp {
+        font-size: 10vh;
+    }
+}
