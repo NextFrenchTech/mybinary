@@ -2,10 +2,10 @@
 @import url('//cdn.jsdelivr.net/gh/be5invis/Iosevka@ff81c66/fonts.css');
 
 html, body {
+    width: 100vw;
+    height: 90vh;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
 }
 
 body {
